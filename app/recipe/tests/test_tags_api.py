@@ -28,7 +28,7 @@ class PublicTagsApiTests(TestCase):
     def setUp(self):
         self.client = APIClient()
 
-    def test_yuth_required(self):
+    def test_auth_required(self):
         """Test auth is required for retrieving tags."""
         res = self.client.get(TAGS_URL)
 
